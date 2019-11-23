@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import classnames from 'classnames';
+import classname from 'classnames';
 
 
 import InputItem from '../InputItem/InputItem';
@@ -85,7 +85,7 @@ class Todo extends Component {
         {itemList.length > 0 &&
           <div className={styles.filter}>
             <button
-              className={classnames({
+              className={classname({
                 [styles.filter__item]: true,
                 [styles.filter__active]:
                   this.state.filter === 'all',
@@ -95,7 +95,7 @@ class Todo extends Component {
               Все
         </button>
             <button
-              className={classnames({
+              className={classname({
                 [styles.filter__item]: true,
                 [styles.filter__active]:
                   this.state.filter === 'noComplete',
@@ -105,7 +105,7 @@ class Todo extends Component {
               Невыполнено
         </button>
             <button
-              className={classnames({
+              className={classname({
                 [styles.filter__item]: true,
                 [styles.filter__active]:
                   this.state.filter === 'complete',

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import classnames from 'classnames';
+import classname from 'classnames';
+
 
 import TextField from '@material-ui/core/TextField';
 
@@ -29,7 +30,7 @@ class InputItem extends Component {
           onFocus={this.props.removeError}
         />
         <button
-          className={classnames({
+          className={classname({
             [styles.addButton]:
               this.state.value !== null && this.state.value !== '',
             [styles.disabledButton]:
