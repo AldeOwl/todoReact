@@ -1,0 +1,40 @@
+.wrap {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid lightcyan;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.wrap:hover{
+  background-color: dodgerblue;
+}
+
+.wrap:hover .name{
+  color: #fff;
+}
+
+.name {
+  margin: 0 0 8px 0;
+  color: dodgerblue;
+  font-size: 1.2em;
+}
+
+.desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: lightcyan;
+  font-size: 1em;
+}
+
+.desc__text {
+  margin: 0;
+}

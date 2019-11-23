@@ -1,0 +1,19 @@
+
+.footerWrap {
+    width: 90%;
+    min-height: 30px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 19px;
+    background-color: lightcyan;
+}
+
+.text {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #313131;
+}
