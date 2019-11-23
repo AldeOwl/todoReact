@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Item.module.css';
 import propTypes from 'prop-types';
-import classname from 'classnames';
+import classnames from 'classnames';
 
 import del from '../../images/delete.svg'
 
@@ -9,7 +9,7 @@ import del from '../../images/delete.svg'
 const Item = ({ task, setTaskIsDone, removeTask }) => {
   return (
     <div className={styles.itemWrap}>
-      <label className={classname({
+      <label className={classnames({
         [styles.label]: task,
         [styles.label__comp]: task.isDone,
       })}>
@@ -21,7 +21,7 @@ const Item = ({ task, setTaskIsDone, removeTask }) => {
         />
       </label>
       <div
-        className={classname({
+        className={classnames({
           [styles.task]: task,
           [styles.done]: task.isDone
         })}
